@@ -205,7 +205,7 @@ errorAgainButton.onclick = () => {
 }
 errorOkButton.onclick = () => {
     setTimeout(() => {
-        window.location.href = "index.html"
+        window.location.href = "home.html"
     }, 200)
 }
 
@@ -306,6 +306,6 @@ downloadButton.onclick = () => {
 
 finishButton.onclick = () => {
     setTimeout(() => {
-        window.location.href = "index.html"
+        window.location.href = "home.html"
     }, 200)
 }
