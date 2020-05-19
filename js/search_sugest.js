@@ -30,7 +30,7 @@ let createButtonSugest = async (term) => {
     divcontainer.style.display = "block"
     let buttonsbox = document.querySelectorAll(".result-boton")
     buttonsbox.forEach((element, index) => {
-        element.innerHTML = infoCatch[index]
+        element.innerHTML = `#${infoCatch[index]}`
     })
 }
 
@@ -45,11 +45,6 @@ document.getElementById("search_input").onkeydown = () => {
     onSearch.style.display = "block"
 }
 
-document.getElementById("boton_close").onclick = () => {
-    document.getElementById("search_input").value = "";
-    let onSearch = document.getElementById("autocomplete_list")
-    onSearch.style.display = "none"
-}
 
 document.getElementById("search_input").onkeyup = (event) => {
     if (event.keyCode === 13) {
@@ -111,7 +106,9 @@ document.getElementById("boton_buscar").onclick = () => {
     } else {
         insertGifsSearch(inputfield.value, "0")
         createButtonSugest(inputfield.value)
+        document.getElementById("autocomplete_list").style.display = "none"
         document.getElementsByClassName("container_sugest")[0].style.display = "none"
+        inputfield.value=""
     }
 }
 

@@ -4,7 +4,6 @@ let botonLight = document.getElementById("boton_light")
 let botonEscogertemas = document.getElementById("boton_tema")
 let botonFlechaAbajo = document.getElementById("flecha_abajo")
 let logoImg = document.getElementById("logo_img")
-const colorTheme = true
 
 const dartTheme = () => {
     logoImg.setAttribute("src", "assets/gifOF_logo_dark.png")
@@ -28,9 +27,7 @@ botonFlechaAbajo.onclick = () => {
 
 botonDark.onclick = () => {
     dartTheme()
-    colorTheme = false
 }
 botonLight.onclick = () => {
     ligthTheme()
-    colorTheme = true
 }

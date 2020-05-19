@@ -28,10 +28,10 @@
                 <button id="flecha_abajo" class="flecha_abajo">
                     <img class="icono_flecha_abajo" src="assets/dropdown.svg" alt="flecha_abajo">
                 </button>
-                <ul id="escoger_temas" class="escoger_temas">
+                <div id="escoger_temas" class="escoger_temas">
                     <button id="boton_light" class="boton_light">Sailor Day</button>
                     <button id="boton_dark" class="boton_dark">Sailor Night</button>
-                </ul>
+                </div>
             </div>
             <button class="mis_gifs">
                 <u>M</u>is Guifos
@@ -43,15 +43,14 @@
             <div class="navbar_search">
                 <h2>Buscar</h2>
                 <div class="inputbar_search">
-                    <input type="text" id="search_input" class="search_bar" size="10%"
+                    <input type="text" id="search_input" class="search_bar"
                         placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" autocomplete="on">
                     <button id="boton_buscar">
                         <img src="assets/lupa_inactive.svg" alt="lupa" class="lupa_buscar">
                         <img src="assets/lupa.svg" alt="lupa" class="lupa">
-                        <p>Buscar</p>
+                        <span>Buscar</span>
                     </button>
                     <ul id="autocomplete_list" class="menu_buscar">
-                        <img src="assets/button close.svg" alt="boton_cerrar" id="boton_close">
                         <li><a id="resultado1" href="javascript:void(0)">resultado 1</a></li>
                         <li><a id="resultado2" href="javascript:void(0)">resultado 2</a></li>
                         <li><a id="resultado3" href="javascript:void(0)">resultado 3</a></li>
@@ -72,7 +71,7 @@
                 <div class="gif_sugerido">
                     <div class="barra_numeral">
                         <h4 id="titulo_gif1">numeral</h4>
-                        <img src="assets/button close.svg" alt="close_button">
+                        <img src="assets/button_close.svg" alt="close_button">
                     </div>
                     <img class="gif" id="gif1" src="assets/descarga.png" alt="gifo1">
                     <button class="boton_mas">Ver más...</button>
@@ -80,7 +79,7 @@
                 <div class="gif_sugerido">
                     <div class="barra_numeral">
                         <h4 id="titulo_gif2">numeral</h4>
-                        <img src="assets/button close.svg" alt="close_button">
+                        <img src="assets/button_close.svg" alt="close_button">
                     </div>
                     <img class="gif" id="gif2" src="assets/descarga.png" alt="gifo2">
                     <button class="boton_mas">Ver más...</button>
@@ -88,7 +87,7 @@
                 <div class="gif_sugerido">
                     <div class="barra_numeral">
                         <h4 id="titulo_gif3">numeral</h4>
-                        <img src="assets/button close.svg" alt="close_button">
+                        <img src="assets/button_close.svg" alt="close_button">
                     </div>
                     <img class="gif" id="gif3" src="assets/descarga.png" alt="gifo3">
                     <button class="boton_mas">Ver más...</button>
@@ -96,7 +95,7 @@
                 <div class="gif_sugerido">
                     <div class="barra_numeral">
                         <h4 id="titulo_gif4">numeral</h4>
-                        <img src="assets/button close.svg" alt="close_button">
+                        <img src="assets/button_close.svg" alt="close_button">
                     </div>
                     <img class="gif" id="gif4" src="assets/descarga.png" alt="gifo4">
                     <button class="boton_mas">Ver más...</button>
@@ -116,7 +115,7 @@
                 </div>
                 <div class="creategifs_steps">
                     <div class="creategifs_content">
-                        <img src="assets/window img.png" alt="icono_ventana">
+                        <img src="assets/window_img.png" alt="icono_ventana">
                         <div class="gifs_step">
                             <p class="creategifs_p1">Aquí podrás crear tus propios guifos</p>
                             <p class="creategifs_p2">Crear tu <span>guifo</span> es muy fácil, graba cualquier imagen
@@ -142,7 +141,7 @@
             <div class="window_scene2" id="stage2">
                 <div class="title_stage2">
                     <h3 id="title_create_gif">Un Chequeo Antes de Empezar</h3>
-                    <button><img src="assets/button close.svg" alt=""></button>
+                    <button><img src="assets/button_close.svg" alt=""></button>
                 </div>
                 <div class="video_box">
                     <video class="video_elemet"></video>
@@ -174,7 +173,7 @@
             <div class="window_scene5" id="stage5">
                 <div class="title_stage5">
                     <h3>Subiendo Guifo</h3>
-                    <button><img src="assets/button close.svg" alt=""></button>
+                    <button><img src="assets/button_close.svg" alt=""></button>
                 </div>
                 <div class="uploadboxgifs">
                     <img src="assets/globe_img.png" alt="globo_mundo">
@@ -189,7 +188,7 @@
             <div class="window_scene6" id="stage6">
                 <div class="title_stage6">
                     <h3>Guifo Subido con Éxito</h3>
-                    <button><img src="assets/button close.svg" alt=""></button>
+                    <button><img src="assets/button_close.svg" alt=""></button>
                 </div>
                 <div class="gifuploadbox">
                     <div class="gifspreview">
@@ -208,7 +207,7 @@
             <div class="window_error_upload" id="error_upload">
                 <div class="title_stage7">
                     <h3>Tu guifo no pudo ser creado</h3>
-                    <button><img src="assets/button close.svg" alt=""></button>
+                    <button><img src="assets/button_close.svg" alt=""></button>
                 </div>
                 <div class="container_error">
                     <img src="assets/ops.jpg" alt="eror-img">
@@ -223,12 +222,13 @@
         </section>
         <section id="my_gifs" class="mis_gifs_section">
             <div class="inicio_section">
-                <h3 id="result_title">Mis guifos</h3>
+                <h3>Mis guifos</h3>
             </div>
             <div id="mygifs_container" class="misgifs"></div>
         </section>
     </main>
 </body>
+
 <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
 <script src="js/fetch.js"></script>
 <script src="js/trend_section.js"></script>
